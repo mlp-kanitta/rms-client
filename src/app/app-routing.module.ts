@@ -5,7 +5,6 @@ import { ViewDetailCountryComponent } from './view-detail-country/view-detail-co
 
 const routes: Routes = [
    { path: '', component: SearchCountryByNameComponent, pathMatch: 'full' }
-   //,{ path: ':keyword', component: SearchCountryByNameComponent }
 ];
 
 @NgModule({

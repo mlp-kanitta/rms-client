@@ -1,5 +1,5 @@
 export class Country {
-	id : string;
+		id : string;
     name: string;
     capital: string;
     subregion: string;

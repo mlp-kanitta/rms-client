@@ -14,7 +14,7 @@ import {EmptyObservable} from 'rxjs/observable/EmptyObservable';
 export class SearchCountryByNameComponent implements OnInit {
 	countries : Array<object[]> = [];
 	keyword : string;
-	
+
 	constructor(private countryService: CountryService,
     private router: Router) {}
 
@@ -30,7 +30,7 @@ export class SearchCountryByNameComponent implements OnInit {
 						 error => console.log('oops', error)
 						);
   }
-  
+
    searchCountry(keyword: string){
 	  if(keyword){
 	  this.countryService.getCountryByName(keyword)
@@ -39,9 +39,8 @@ export class SearchCountryByNameComponent implements OnInit {
 						},
 						 error => {
 							 this.countries = []
-							 //console.log('Error', error)
 						 }
-						); 
+						);
 	  }else{
 		  this.displayAll();
 	  }
