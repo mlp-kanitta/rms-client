@@ -32,7 +32,7 @@
     "typescript": "~3.8.3",
     "protractor": "~5.4.3",
     "ts-node": "~8.3.0",
-    "tslint": "~6.1.0",
+    "tslint": "~6.1.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.901.3",
